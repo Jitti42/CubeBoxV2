@@ -13,11 +13,11 @@ public class Cirby : MonoBehaviour
     public Vector2 velocity;
     public UIManager uiManager;
     private bool died;
-    public AudioSource audioSource;
-    private AudioSource Backgroundsound;
-    public AudioClip coin;
     
-    public AudioClip die;
+   
+    
+    
+    
     AudioSource _audio;
     public AudioMixerGroup _mixerGroupMicrophone, _mixerGroupMaster;
     public float sentivity = 100;
@@ -28,7 +28,7 @@ public class Cirby : MonoBehaviour
         
         animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D> ();
-        audioSource = GetComponent <AudioSource>();
+        
         uiManager.start();
         _audio = GetComponent<AudioSource>();
         _audio.outputAudioMixerGroup = _mixerGroupMicrophone;
@@ -42,6 +42,7 @@ public class Cirby : MonoBehaviour
 
         }
         _audio.Play();
+        
         died = false; 
     }
 
@@ -50,7 +51,7 @@ public class Cirby : MonoBehaviour
         if (died)
             return;
         
-        audioSource.PlayOneShot(coin);
+        _audio.mute = false;
         this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 2);
         uiManager.IncreaseScore();
         
@@ -61,7 +62,7 @@ public class Cirby : MonoBehaviour
 
            
         loudness = GetAveragedVolume() * sentivity;
-        if(loudness > 2.5 )
+        if(loudness > 1 )
         {
             
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, 2);
@@ -88,7 +89,7 @@ public class Cirby : MonoBehaviour
     {
         died = true;
        
-        audioSource.PlayOneShot(die);
+        
         Invoke ("Ondied", 0);
         
     }
