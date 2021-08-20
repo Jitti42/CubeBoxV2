@@ -1717,7 +1717,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.9, y: 0.55}
+  m_Size: {x: 5.9, y: 0.54}
   m_EdgeRadius: 0
 --- !u!61 &1135256743
 BoxCollider2D:
@@ -2809,7 +2809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 99.4, y: -47}
+  m_AnchoredPosition: {x: 99.392, y: -47}
   m_SizeDelta: {x: 327.42413, y: 154.72296}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1414902629
@@ -2956,6 +2956,7 @@ MonoBehaviour:
   namePanel: {fileID: 1626783196}
   inputField: {fileID: 838972112}
   character: 
+  Trip: {fileID: 0}
 --- !u!114 &1626783199
 MonoBehaviour:
   m_ObjectHideFlags: 0

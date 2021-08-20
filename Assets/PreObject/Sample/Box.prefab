@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 5719589565222451525}
   m_Layer: 0
   m_Name: Box1
-  m_TagString: box
+  m_TagString: Box1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 7048400132099270502}
   m_Layer: 0
   m_Name: Box2
-  m_TagString: box
+  m_TagString: Box2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

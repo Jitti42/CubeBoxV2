@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
+
 using UnityEngine;
 
 public class Bonus : MonoBehaviour
@@ -15,7 +15,7 @@ public class Bonus : MonoBehaviour
 
     
 
-    public scoremanage Scores;
+    
 
     public float speed;
     public float left;
